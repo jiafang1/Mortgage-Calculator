@@ -1,4 +1,37 @@
 /* Style the tab */
+body {
+
+  background: linear-gradient(to top left, #4A148C, #C51162);
+  background-repeat: cover;
+  color: white; 
+}
+
+input {
+  margin-bottom: 5vh;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  background-color:transparent;
+  outline: none;
+  color: white;
+  caret-color: white;
+}
+
+input[type=text]::placeholder {
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit] {
+  background: rgba(255,255,255,.2);
+  width: 23%;
+  padding: 2vh;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px 4px;
+}
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
@@ -32,4 +65,18 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 20vw;
 }

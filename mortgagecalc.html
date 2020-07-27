@@ -21,6 +21,13 @@
 <div id="Calculator" class="tabcontent">
   <h3>Calculator</h3>
   <p>Enter required values.</p>
+  <form onSubmit=formSubmit(event)>
+        <input type="text" id="principal" name="principal" placeholder="Principal (P)" onfocus="this.placeholder=''" onblur="this.placeholder='Principal (P)'"><br>
+        <input type="text" id="interestr" name="interestr" placeholder="Interest Rate (r)" onfocus="this.placeholder=''" onblur="this.placeholder='Interest Rate (r)'"><br>
+        <input type="text" id="numpay" name="numpay" placeholder="Number of Payments (n)" onfocus="this.placeholder=''" onblur="this.placeholder='Number of Payments (n)'"><br>
+        <br>
+        <input type="submit" value="Submit">
+</form>
 </div>
 
 
