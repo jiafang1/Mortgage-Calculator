@@ -2,31 +2,28 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="mortgagecalc.css">
+<script src="mortgagecalc.js"></script>
 </head>
 <body>
 
-<div class=”calculator”>
-  <div class=”calculator__display”>0</div>
-  <div class="calculator__keys">
-  <button class="key--operator" data-action="add">+</button>
-  <button class="key--operator" data-action="subtract">-</button>
-  <button class="key--operator" data-action="multiply">&times;</button>
-  <button class="key--operator" data-action="divide">÷</button>
-  <button>7</button>
-  <button>8</button>
-  <button>9</button>
-  <button>4</button>
-  <button>5</button>
-  <button>6</button>
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>0</button>
-  <button data-action="decimal">.</button>
-  <button data-action="clear">AC</button>
-  <button class="key--equal" data-action="calculate">=</button>
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Info')">Formula</button>
+  <button class="tablinks" onclick="openCity(event, 'Calculator')">Calculator</button>
 </div>
+
+<!-- Tab content -->
+<div id="Info" class="tabcontent">
+  <h3>Formula</h3>
+  <p>The following explains the formula for how mortgage is calculated. Please read before using the calculator.</p>
 </div>
+
+<div id="Calculator" class="tabcontent">
+  <h3>Calculator</h3>
+  <p>Enter required values.</p>
+</div>
+
+
 
 </body>
 </html>
