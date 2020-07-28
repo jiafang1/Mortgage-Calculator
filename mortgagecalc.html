@@ -7,13 +7,13 @@
 </head>
 <body>
 
-<!-- Tab links -->
+<!-- tab links -->
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'Info')" id="defaultOpen">Formula</button>
   <button class="tablinks" onclick="openTab(event, 'Calculator')">Calculator</button>
 </div>
 
-<!-- Tab content -->
+<!-- info tab content -->
 <div id="Info" class="tabcontent">
   <h3>Formula</h3>
   <p>The following explains the formula for how mortgage is calculated. Please read before using the calculator.</p>
@@ -24,6 +24,7 @@
   <p>n = number of payments over the loan’s lifetime. Multiply the number of years in your loan term by 12 (the number of months in a year) to get the number of payments for your loan. For example, a 30-year fixed mortgage would have 360 payments (30x12=360)</p>
 </div>
 
+<!-- calculator tab content -->
 <div id="Calculator" class="tabcontent">
   <h3>Calculator</h3>
   <p>Enter required values.</p>
@@ -31,12 +32,11 @@
         <input type="text" id="principal" name="principal" placeholder="Principal (P)" onfocus="this.placeholder=''" onblur="this.placeholder='Principal (P)'"><br>
         <input type="text" id="interestr" name="interestr" placeholder="Interest Rate (r)" onfocus="this.placeholder=''" onblur="this.placeholder='Interest Rate (r)'"><br>
         <input type="text" id="numpay" name="numpay" placeholder="Number of Payments (n)" onfocus="this.placeholder=''" onblur="this.placeholder='Number of Payments (n)'"><br>
-        <br>
+        <p>Current monthly payment:</p>
+		<p id="calcOut">0</p></br>
         <input type="submit" value="Submit">
-</form>
+	</form>
 </div>
-
-
 
 </body>
 </html>

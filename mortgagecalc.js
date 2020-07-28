@@ -1,3 +1,4 @@
+//sets default tab to be selected when page finishes loading
 $( document ).ready(function() {
     console.log( "ready!" );
     document.getElementById("defaultOpen").click();
@@ -24,7 +25,14 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
+//function called on submit. Mortgage calculations performed here then sent to html.
 function formSubmit(event) {
   event.preventDefault();
-  console.log("myfunction works");
+  var payment = 0;
+  var p = document.getElementById("principal").value;
+  var r = document.getElementById("interestr").value;
+  var n = document.getElementById("numpay").value;
+  coeff = Math.pow((1+r), n);
+  payment = p*(r*coeff/(coeff-1));
+  document.getElementById("calcOut").innerHTML = payment;
 }
