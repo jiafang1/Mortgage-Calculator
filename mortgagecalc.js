@@ -1,9 +1,9 @@
 //sets default tab to be selected when page finishes loading
 $( document ).ready(function() {
-    console.log( "ready!" );
     document.getElementById("defaultOpen").click();
 });
 
+//function taken from w3shcools for working with tabs
 function openTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -27,12 +27,17 @@ function openTab(evt, tabName) {
 
 //function called on submit. Mortgage calculations performed here then sent to html.
 function formSubmit(event) {
+  //prevents page from resetting to default tab and erasing information in calculator tab on clicking submit
   event.preventDefault();
+
+  //calculations for payment
   var payment = 0;
   var p = document.getElementById("principal").value;
   var r = document.getElementById("interestr").value;
   var n = document.getElementById("numpay").value;
   coeff = Math.pow((1+r), n);
   payment = p*(r*coeff/(coeff-1));
+
+  //change html to display calculated payment value
   document.getElementById("calcOut").innerHTML = payment;
 }
