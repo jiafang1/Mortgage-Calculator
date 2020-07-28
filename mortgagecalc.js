@@ -26,4 +26,5 @@ function openTab(evt, tabName) {
 
 function formSubmit(event) {
   event.preventDefault();
+  console.log("myfunction works");
 }
