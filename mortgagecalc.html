@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="mortgagecalc.css">
@@ -28,15 +28,16 @@
 <div id="Calculator" class="tabcontent">
   <h3>Calculator</h3>
   <p>Enter required values.</p>
-  <form onSubmit=formSubmit(event)>
+  <form name = inputFrm id = inputFrm method = "post" onSubmit=formSubmit(event)>
         <input type="text" id="principal" name="principal" placeholder="Principal (P)" onfocus="this.placeholder=''" onblur="this.placeholder='Principal (P)'"><br>
         <input type="text" id="interestr" name="interestr" placeholder="Interest Rate (r)" onfocus="this.placeholder=''" onblur="this.placeholder='Interest Rate (r)'"><br>
         <input type="text" id="numpay" name="numpay" placeholder="Number of Payments (n)" onfocus="this.placeholder=''" onblur="this.placeholder='Number of Payments (n)'"><br>
         <p>Current monthly payment:</p>
-		<p id="calcOut">0</p></br>
-        <input type="submit" value="Submit">
+		    <p id="calcOut">0</p></br>
+        <button type = button id = inputFrmSubmit value="Submit" onclick="formSubmit()">Calculate</button>
 	</form>
 </div>
 
 </body>
 </html>
+

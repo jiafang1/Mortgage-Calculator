@@ -21,15 +21,6 @@ input[type=text]::placeholder {
   font-family: 'Roboto', sans-serif;
 }
 
-input[type=submit] {
-  background: rgba(255,255,255,.2);
-  width: 23%;
-  padding: 2vh;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px 4px;
-}
-
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
